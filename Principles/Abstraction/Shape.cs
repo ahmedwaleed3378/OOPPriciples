@@ -39,6 +39,5 @@ namespace OOPPriciples.Principles.Abstraction
 			Math.PI * Radius * Radius;
 		public override double Perimeter() =>
 			Math.PI * 2 * Radius;
-
 	} 
 }

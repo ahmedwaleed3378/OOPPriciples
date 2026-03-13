@@ -1,6 +1,8 @@
-﻿using OOPPriciples.Principles.Abstraction;
+﻿using OOPPriciples.Advanced;
+using OOPPriciples.Principles.Abstraction;
 using OOPPriciples.Principles.Encapsulation;
 using OOPPriciples.Principles.Inheritance;
+using OOPPriciples.Principles.Polymorphism;
 
 namespace OOPPriciples
 {
@@ -38,7 +40,7 @@ namespace OOPPriciples
 			// Lion lion4 = new Animal("lion5", 6); 
 
 
-			Console.WriteLine(lion2.GetInfo());
+		//	Console.WriteLine(lion2.GetInfo());
             ////////////////////////////////////
             ///
 
@@ -47,14 +49,52 @@ namespace OOPPriciples
 
 
             Shape shape = new Circle(5);
-            shape.PrintInfo();
+            //  shape.PrintInfo();
 
 
 
 
 
 
-            Console.ReadLine();
+
+
+
+
+            //         List<IDrawable> uiElements = [
+            //             new Button{ Label= "Save"},
+            //             new TextBox{PlaceHolder = "Username"},
+            //             new Icon {IconName = "Star"}
+            //             ];
+
+
+            //foreach (var item in uiElements)
+            //{
+            //             // Polymorphism 
+            //             item.Draw();
+            //}
+
+            Student khaled = new Student("Khaled");
+			Student hassan = new Student("hass");
+
+			Console.WriteLine(Student.TotalIncrements);
+			// Student.TotalIncrements; 
+
+
+
+
+
+
+			Car car = new Car() { Name = "Kia", Price =15};
+			Console.WriteLine(Car.TiersCount);
+
+
+
+
+
+
+           var x =  MathUtils.Pi;
+            var c = MathUtils.CircleArea(16);
+			Console.ReadLine();
 		}
     }
 }

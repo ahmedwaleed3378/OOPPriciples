@@ -8,7 +8,7 @@ namespace OOPPriciples.Principles.Encapsulation
 {
 	internal class BankAccount
 	{
-		private decimal _balance;
+		 decimal _balance;
 		private string _accountNumber;
 		
 		
